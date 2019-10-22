@@ -11,8 +11,8 @@ describe("Merge function", function() {
     expect(merge(arr1, arr2)).toEqual([0, 50]);
   });
   it("is able to handle a single array", function() {
-      let arr1 = [1];
-      expect(merge(arr1)).toEqual([1]);
+    let arr1 = [1];
+    expect(merge(arr1)).toEqual([1]);
   });
   it("is able to merge two sorted arrays into one sorted array", function() {
     let arr1 = [3, 27, 38, 43];
@@ -20,3 +20,8 @@ describe("Merge function", function() {
     expect(merge(arr1, arr2)).toEqual([3, 9, 10, 27, 38, 43, 82]);
   });
 });
+describe("Merge Sort", function() {
+    it("takes one array and returns a sorted array using the spli and merge functions", function() {
+        expect(mergeSort([6, 3, 5, 1, 4])).toEqual([1, 3, 4, 5, 6]);
+    })
+})
